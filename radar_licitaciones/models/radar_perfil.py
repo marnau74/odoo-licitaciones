@@ -178,6 +178,9 @@ class RadarPerfil(models.Model):
             except RadarError as error:
                 _logger.warning("Radar: no se ha podido importar el perfil %s: %s", perfil.name, error)
                 perfil.ultimo_error = str(error)
+            except Exception as error:  # noqa: BLE001 - un dato inesperado del radar no puede parar a los demás perfiles
+                _logger.exception("Radar: error inesperado al importar el perfil %s", perfil.name)
+                perfil.ultimo_error = self.env._("Unexpected error while importing: %(error)s", error=error)
 
     def action_ver_licitaciones(self):
         self.ensure_one()

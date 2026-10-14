@@ -60,7 +60,15 @@ class RadarCliente(models.AbstractModel):
                 motivo = str(error)
             else:
                 if respuesta.ok:
-                    return respuesta.json()
+                    try:
+                        return respuesta.json()
+                    except ValueError as error:
+                        # Una página de error de un proxy, por ejemplo: no tiene sentido repetir.
+                        raise RadarError(
+                            self.env._(
+                                "The tender radar returned a response that is not JSON: %(url)s", url=respuesta.url
+                            )
+                        ) from error
                 if respuesta.status_code < 500:
                     raise RadarError(
                         self.env._(

@@ -135,6 +135,26 @@ class TestImportacion(RadarCase):
         self.assertEqual(len(self.radar.peticiones), 6)
 
     @mute_logger("odoo.addons.radar_licitaciones.models.radar_perfil")
+    def test_una_respuesta_que_no_es_json_es_un_error_del_radar_y_no_se_reintenta(self):
+        self.radar.html = True
+
+        self.env["radar.perfil"]._cron_importar()
+
+        self.assertIn("not JSON", self.perfil.ultimo_error)
+        self.assertEqual(len(self.radar.peticiones), 1)
+
+    @mute_logger("odoo.addons.radar_licitaciones.models.radar_perfil")
+    def test_un_dato_inesperado_no_para_la_importacion_de_los_demas_perfiles(self):
+        otro = self.perfil.copy({"name": "Otro perfil"})
+        self.radar.elementos_rotos = True
+
+        self.env["radar.perfil"]._cron_importar()
+
+        self.assertIn("Unexpected error", self.perfil.ultimo_error)
+        self.assertIn("Unexpected error", otro.ultimo_error)
+        self.assertFalse(self.env["radar.licitacion"].search_count([]))
+
+    @mute_logger("odoo.addons.radar_licitaciones.models.radar_perfil")
     def test_sin_direccion_del_radar_no_importa_y_lo_dice(self):
         self.env["ir.config_parameter"].sudo().set_param("radar_licitaciones.url", "")
 

@@ -94,7 +94,7 @@ dirección del radar, crea dos perfiles de búsqueda e importa.
 docker compose run --rm pruebas odoo -d pruebas -i radar_licitaciones --test-enable --test-tags /radar_licitaciones --stop-after-init
 ```
 
-34 pruebas: importación con la respuesta real grabada, sin duplicados al repetir, cambios que se actualizan y quedan
+36 pruebas: importación con la respuesta real grabada, sin duplicados al repetir, cambios que se actualizan y quedan
 en el historial, paginación, fallos de red y del servidor (reintentos, error guardado, acción programada que no
 falla), parámetros de la búsqueda, validaciones, plazo con zonas horarias, conversión en oportunidad (cliente creado
 o reutilizado por NIF, tarea programada), informe, permisos por grupo, aislamiento entre compañías y un recorrido de

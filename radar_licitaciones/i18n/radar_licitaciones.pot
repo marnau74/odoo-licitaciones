@@ -912,6 +912,12 @@ msgid "The tender radar rejected the request (%(status)s): %(url)s"
 msgstr ""
 
 #. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_cliente.py:0
+msgid "The tender radar returned a response that is not JSON: %(url)s"
+msgstr ""
+
+#. module: radar_licitaciones
 #: model:ir.model.constraint,message:radar_licitaciones.constraint_radar_licitacion_radar_id_por_compania
 msgid "This tender has already been imported for this company."
 msgstr ""
@@ -934,6 +940,12 @@ msgstr ""
 #. module: radar_licitaciones
 #: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__activity_exception_decoration
 msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_perfil.py:0
+msgid "Unexpected error while importing: %(error)s"
 msgstr ""
 
 #. module: radar_licitaciones

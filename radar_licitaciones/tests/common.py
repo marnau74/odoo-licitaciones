@@ -30,6 +30,8 @@ class RespuestaFalsa:
         return self.status_code < 400
 
     def json(self):
+        if isinstance(self._cuerpo, str):
+            raise requests.JSONDecodeError("Expecting value", self._cuerpo, 0)
         return copy.deepcopy(self._cuerpo)
 
 
@@ -42,6 +44,9 @@ class RadarFalso:
         self.peticiones = []
         self.caido = False
         self.estado_forzado = None
+        # Un cuerpo que no es JSON (la página de error de un proxy) o una búsqueda con elementos sin identificador.
+        self.html = False
+        self.elementos_rotos = False
 
     def get(self, url, params=None, timeout=None, headers=None, **kwargs):
         if not url.startswith(URL):
@@ -51,6 +56,8 @@ class RadarFalso:
             raise requests.ConnectionError("Connection refused")
         if self.estado_forzado:
             return RespuestaFalsa({"title": "Error"}, status_code=self.estado_forzado, url=url)
+        if self.html:
+            return RespuestaFalsa("<html>Bad gateway</html>", url=url)
         ruta = urlparse(url).path
         if ruta == "/api/v1/licitaciones":
             return RespuestaFalsa(self._pagina(int((params or {}).get("pagina", 1))), url=url)
@@ -61,6 +68,8 @@ class RadarFalso:
         return RespuestaFalsa({"title": "No encontrada"}, status_code=404, url=url)
 
     def _pagina(self, pagina):
+        if self.elementos_rotos:
+            return {"elementos": [{"titulo": "Sin id"}], "total": 1, "paginas": 1}
         return self.busqueda if pagina == 1 else dict(self.busqueda, elementos=[])
 
     def busquedas(self):
