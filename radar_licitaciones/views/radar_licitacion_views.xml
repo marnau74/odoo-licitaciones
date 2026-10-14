@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="radar_licitacion_view_list" model="ir.ui.view">
+    <field name="name">radar.licitacion.list</field>
+    <field name="model">radar.licitacion</field>
+    <field name="arch" type="xml">
+      <list
+        create="false"
+        decoration-muted="etapa == 'descartada' or anulada"
+        decoration-warning="cierra_pronto and etapa != 'convertida'"
+      >
+        <field name="cierra_pronto" column_invisible="1" />
+        <field name="anulada" column_invisible="1" />
+        <field name="name" />
+        <field name="organo_id" optional="show" />
+        <field name="state_id" optional="show" />
+        <field name="importe" sum="Total" />
+        <field name="plazo" widget="remaining_days" optional="show" />
+        <field name="fecha_publicacion" optional="hide" />
+        <field name="cpv" optional="hide" />
+        <field
+          name="estado"
+          widget="badge"
+          decoration-success="estado == 'PUB'"
+          decoration-info="estado in ('PRE', 'EV')"
+          optional="show"
+        />
+        <field name="etapa" widget="badge" decoration-primary="etapa == 'convertida'" />
+        <field name="perfil_id" optional="hide" />
+        <field name="company_id" groups="base.group_multi_company" optional="hide" />
+      </list>
+    </field>
+  </record>
+
+  <record id="radar_licitacion_view_kanban" model="ir.ui.view">
+    <field name="name">radar.licitacion.kanban</field>
+    <field name="model">radar.licitacion</field>
+    <field name="arch" type="xml">
+      <kanban
+        default_group_by="etapa"
+        create="false"
+        group_create="false"
+        group_delete="false"
+        group_edit="false"
+        quick_create="false"
+        records_draggable="true"
+        sample="1"
+      >
+        <field name="currency_id" />
+        <field name="cierra_pronto" />
+        <progressbar
+          field="estado"
+          colors='{"PUB": "success", "EV": "info", "ADJ": "muted", "RES": "muted", "ANUL": "danger"}'
+          sum_field="importe"
+        />
+        <templates>
+          <t t-name="card">
+            <field name="name" class="fw-bold" />
+            <field name="organo_id" class="text-muted" />
+            <div class="d-flex justify-content-between mt-1">
+              <field name="importe" widget="monetary" />
+              <field name="state_id" class="text-muted" />
+            </div>
+            <footer class="pt-1">
+              <field name="plazo" widget="remaining_days" />
+              <span t-if="record.cierra_pronto.raw_value" class="badge text-bg-warning ms-2">Closing soon</span>
+              <field name="activity_ids" widget="kanban_activity" class="ms-auto" />
+            </footer>
+          </t>
+        </templates>
+      </kanban>
+    </field>
+  </record>
+
+  <record id="radar_licitacion_view_form" model="ir.ui.view">
+    <field name="name">radar.licitacion.form</field>
+    <field name="model">radar.licitacion</field>
+    <field name="arch" type="xml">
+      <form create="false">
+        <header>
+          <button
+            name="action_convertir"
+            type="object"
+            string="Convert to opportunity"
+            class="btn-primary"
+            invisible="lead_id"
+          />
+          <button
+            name="action_interesa"
+            type="object"
+            string="Interesting"
+            invisible="etapa not in ('nueva', 'descartada')"
+          />
+          <button
+            name="action_descartar"
+            type="object"
+            string="Discard"
+            invisible="etapa in ('convertida', 'descartada')"
+          />
+          <button name="action_abrir_en_radar" type="object" string="Open in the radar" invisible="not url" />
+          <field name="etapa" widget="statusbar" statusbar_visible="nueva,interesa,convertida" />
+        </header>
+        <sheet>
+          <div class="oe_button_box" name="button_box">
+            <button
+              name="action_ver_oportunidad"
+              type="object"
+              class="oe_stat_button"
+              icon="fa-handshake-o"
+              invisible="not lead_id"
+            >
+              <div class="o_stat_info">
+                <span class="o_stat_text">Opportunity</span>
+              </div>
+            </button>
+          </div>
+          <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-danger" invisible="not anulada" />
+          <div class="oe_title">
+            <label for="name" />
+            <h1>
+              <field name="name" />
+            </h1>
+          </div>
+          <group>
+            <group>
+              <field name="organo_id" />
+              <field name="expediente" />
+              <field name="importe" />
+              <field name="tipo_contrato" />
+              <field name="estado" />
+            </group>
+            <group>
+              <field name="plazo" />
+              <field name="dias_para_el_plazo" invisible="not plazo" />
+              <field name="fecha_publicacion" />
+              <field name="state_id" />
+              <field name="lugar" />
+              <field name="cpv" />
+            </group>
+          </group>
+          <group>
+            <group>
+              <field name="perfil_id" />
+              <field name="user_id" widget="many2one_avatar_user" />
+            </group>
+            <group>
+              <field name="lead_id" />
+              <field name="radar_id" />
+              <field name="url" widget="url" invisible="not url" />
+              <field name="company_id" groups="base.group_multi_company" />
+              <field name="anulada" invisible="1" />
+              <field name="currency_id" invisible="1" />
+            </group>
+          </group>
+        </sheet>
+        <chatter />
+      </form>
+    </field>
+  </record>
+
+  <record id="radar_licitacion_view_search" model="ir.ui.view">
+    <field name="name">radar.licitacion.search</field>
+    <field name="model">radar.licitacion</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="name" />
+        <field name="organo_id" />
+        <field name="expediente" />
+        <field name="cpv" />
+        <field name="state_id" />
+        <field name="perfil_id" />
+        <filter name="pendientes" string="To review" domain="[('etapa', 'in', ('nueva', 'interesa'))]" />
+        <filter name="convertidas" string="Opportunities" domain="[('etapa', '=', 'convertida')]" />
+        <separator />
+        <filter name="abiertas" string="Open for bids" domain="[('estado', '=', 'PUB'), ('anulada', '=', False)]" />
+        <filter name="cierra_pronto" string="Closing soon" domain="[('cierra_pronto', '=', True)]" />
+        <separator />
+        <filter name="mis_perfiles" string="My profiles" domain="[('perfil_id.user_id', '=', uid)]" />
+        <separator />
+        <filter name="publicacion" string="Published on" date="fecha_publicacion" />
+        <filter name="plazo" string="Deadline" date="plazo" />
+        <group>
+          <filter name="por_etapa" string="Stage" context="{'group_by': 'etapa'}" />
+          <filter name="por_estado" string="Status" context="{'group_by': 'estado'}" />
+          <filter name="por_provincia" string="Province" context="{'group_by': 'state_id'}" />
+          <filter name="por_organo" string="Contracting body" context="{'group_by': 'organo_id'}" />
+          <filter name="por_cpv" string="CPV division" context="{'group_by': 'cpv_division'}" />
+          <filter name="por_perfil" string="Profile" context="{'group_by': 'perfil_id'}" />
+          <filter name="por_mes" string="Publication month" context="{'group_by': 'fecha_publicacion:month'}" />
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record id="radar_licitacion_view_graph" model="ir.ui.view">
+    <field name="name">radar.licitacion.graph</field>
+    <field name="model">radar.licitacion</field>
+    <field name="arch" type="xml">
+      <graph type="bar" sample="1">
+        <field name="state_id" />
+        <field name="importe" type="measure" />
+      </graph>
+    </field>
+  </record>
+
+  <record id="radar_licitacion_view_pivot" model="ir.ui.view">
+    <field name="name">radar.licitacion.pivot</field>
+    <field name="model">radar.licitacion</field>
+    <field name="arch" type="xml">
+      <pivot sample="1">
+        <field name="state_id" type="row" />
+        <field name="fecha_publicacion" interval="month" type="col" />
+        <field name="importe" type="measure" />
+      </pivot>
+    </field>
+  </record>
+
+  <record id="radar_licitacion_action" model="ir.actions.act_window">
+    <field name="name">Public tenders</field>
+    <field name="res_model">radar.licitacion</field>
+    <field name="view_mode">kanban,list,form,pivot,graph,activity</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">No tenders yet</p>
+      <p>
+        Create a search profile and import: the tenders from the radar that match it will appear here, ready
+                to be converted into opportunities.
+      </p>
+    </field>
+  </record>
+</odoo>

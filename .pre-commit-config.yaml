@@ -1,0 +1,38 @@
+# Las herramientas de la OCA: ruff para el estilo de Python, pylint-odoo para las reglas de Odoo, los checks de módulos
+# de la OCA para el XML y el manifiesto, y prettier para dar formato al XML.
+exclude: /static/description/
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-xml
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.0
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
+  - repo: https://github.com/OCA/pylint-odoo
+    rev: v10.0.12
+    hooks:
+      - id: pylint_odoo
+        args: [--rcfile=.pylintrc]
+  - repo: https://github.com/OCA/odoo-pre-commit-hooks
+    rev: v0.2.27
+    hooks:
+      - id: oca-checks-odoo-module
+      - id: oca-checks-po
+  - repo: local
+    hooks:
+      - id: prettier-xml
+        name: prettier (XML)
+        entry: prettier --write
+        language: node
+        files: \.xml$
+        # La versión 2 de prettier, como en la OCA: la 3 no encuentra el complemento de XML instalado por pre-commit.
+        additional_dependencies: ["prettier@2.8.8", "@prettier/plugin-xml@2.2.0"]

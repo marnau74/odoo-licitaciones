@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="res_groups_privilege_radar" model="res.groups.privilege">
+    <field name="name">Public tenders</field>
+    <field name="sequence" eval="20" />
+    <field name="category_id" ref="base.module_category_sales" />
+  </record>
+
+  <!-- Usuario: ve las licitaciones, las clasifica y las convierte en oportunidades. -->
+  <record id="group_radar_usuario" model="res.groups">
+    <field name="name">User</field>
+    <field name="sequence" eval="10" />
+    <field name="privilege_id" ref="res_groups_privilege_radar" />
+    <field name="implied_ids" eval="[(4, ref('sales_team.group_sale_salesman'))]" />
+  </record>
+
+  <!-- Responsable: además configura los perfiles de búsqueda e importa. -->
+  <record id="group_radar_responsable" model="res.groups">
+    <field name="name">Administrator</field>
+    <field name="sequence" eval="20" />
+    <field name="privilege_id" ref="res_groups_privilege_radar" />
+    <field name="implied_ids" eval="[(4, ref('group_radar_usuario'))]" />
+    <field name="user_ids" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]" />
+  </record>
+</odoo>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="action_report_licitacion" model="ir.actions.report">
+    <field name="name">Tender summary</field>
+    <field name="model">radar.licitacion</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">radar_licitaciones.report_licitacion</field>
+    <field name="report_file">radar_licitaciones.report_licitacion</field>
+    <field name="print_report_name">'Tender - %s' % (object.expediente or object.radar_id)</field>
+    <field name="binding_model_id" ref="model_radar_licitacion" />
+    <field name="binding_type">report</field>
+  </record>
+
+  <template id="report_licitacion_documento">
+    <t t-call="web.external_layout">
+      <div class="page">
+        <h2 t-field="o.name" />
+        <p class="text-muted">
+          <span t-field="o.organo_id" />
+          <t t-if="o.expediente">
+            · File
+            <span t-field="o.expediente" />
+          </t>
+        </p>
+
+        <table class="table table-sm mt-4">
+          <tbody>
+            <tr>
+              <th class="w-25">Budget (without VAT)</th>
+              <td>
+                <span t-field="o.importe" />
+              </td>
+            </tr>
+            <tr>
+              <th>Bid deadline</th>
+              <td>
+                <span t-if="o.plazo" t-field="o.plazo" />
+                <span t-else="">Not published</span>
+              </td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td>
+                <span t-field="o.estado" />
+                <t t-if="o.anulada">(cancelled)</t>
+              </td>
+            </tr>
+            <tr t-if="o.tipo_contrato">
+              <th>Contract type</th>
+              <td>
+                <span t-field="o.tipo_contrato" />
+              </td>
+            </tr>
+            <tr>
+              <th>Place</th>
+              <td>
+                <span t-field="o.lugar" />
+                <t t-if="o.state_id">
+                  (
+                  <span t-field="o.state_id" />
+                  )
+                </t>
+              </td>
+            </tr>
+            <tr>
+              <th>CPV</th>
+              <td>
+                <span t-field="o.cpv" />
+              </td>
+            </tr>
+            <tr>
+              <th>Published on</th>
+              <td>
+                <span t-field="o.fecha_publicacion" />
+              </td>
+            </tr>
+            <tr>
+              <th>Stage in the company</th>
+              <td>
+                <span t-field="o.etapa" />
+                <t t-if="o.lead_id">
+                  ·
+                  <span t-field="o.lead_id" />
+                </t>
+              </td>
+            </tr>
+            <tr t-if="o.perfil_id">
+              <th>Found by</th>
+              <td>
+                <span t-field="o.perfil_id" />
+                (
+                <span t-field="o.user_id" />
+                )
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p t-if="o.url" class="small">
+          Full file, documents and results in the radar:
+          <a t-att-href="o.url" t-out="o.url" />
+        </p>
+      </div>
+    </t>
+  </template>
+
+  <template id="report_licitacion">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="o">
+        <t t-call="radar_licitaciones.report_licitacion_documento" t-lang="o.env.user.lang" />
+      </t>
+    </t>
+  </template>
+</odoo>

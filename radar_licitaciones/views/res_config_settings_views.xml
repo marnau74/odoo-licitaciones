@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="res_config_settings_view_form" model="ir.ui.view">
+    <field name="name">res.config.settings.form.radar</field>
+    <field name="model">res.config.settings</field>
+    <field name="inherit_id" ref="base.res_config_settings_view_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//form" position="inside">
+        <app data-string="Tenders" string="Tenders" name="radar_licitaciones" groups="base.group_system">
+          <block title="Tender radar">
+            <setting
+              string="Radar address"
+              help="The public API of the radar is used to import tenders and to complete the contracting bodies."
+            >
+              <field name="radar_licitaciones_url" placeholder="https://radar.example.com" />
+            </setting>
+          </block>
+        </app>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="radar_config_settings_action" model="ir.actions.act_window">
+    <field name="name">Settings</field>
+    <field name="res_model">res.config.settings</field>
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="res_config_settings_view_form" />
+    <field name="context">{'module': 'radar_licitaciones', 'bin_size': False}</field>
+  </record>
+</odoo>

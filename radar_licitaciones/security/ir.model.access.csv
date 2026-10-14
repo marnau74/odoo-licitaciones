@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_radar_perfil_usuario,radar.perfil usuario,model_radar_perfil,group_radar_usuario,1,0,0,0
+access_radar_perfil_responsable,radar.perfil responsable,model_radar_perfil,group_radar_responsable,1,1,1,1
+access_radar_licitacion_usuario,radar.licitacion usuario,model_radar_licitacion,group_radar_usuario,1,1,0,0
+access_radar_licitacion_responsable,radar.licitacion responsable,model_radar_licitacion,group_radar_responsable,1,1,1,1

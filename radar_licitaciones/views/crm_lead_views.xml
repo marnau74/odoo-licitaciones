@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="crm_lead_view_form" model="ir.ui.view">
+    <field name="name">crm.lead.form.radar</field>
+    <field name="model">crm.lead</field>
+    <field name="inherit_id" ref="crm.crm_lead_view_form" />
+    <field name="arch" type="xml">
+      <div name="button_box" position="inside">
+        <button
+          name="action_ver_licitacion"
+          type="object"
+          class="oe_stat_button"
+          icon="fa-gavel"
+          invisible="not licitacion_id"
+          groups="radar_licitaciones.group_radar_usuario"
+        >
+          <div class="o_stat_info">
+            <span class="o_stat_text">Public tender</span>
+          </div>
+        </button>
+      </div>
+    </field>
+  </record>
+
+  <record id="crm_lead_view_search" model="ir.ui.view">
+    <field name="name">crm.lead.search.radar</field>
+    <field name="model">crm.lead</field>
+    <field name="inherit_id" ref="crm.view_crm_case_opportunities_filter" />
+    <field name="arch" type="xml">
+      <filter name="unassigned" position="after">
+        <filter name="de_licitaciones" string="From public tenders" domain="[('licitacion_id', '!=', False)]" />
+      </filter>
+    </field>
+  </record>
+</odoo>

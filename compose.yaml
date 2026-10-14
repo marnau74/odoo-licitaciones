@@ -1,0 +1,60 @@
+# Odoo 19 con el módulo montado y PostgreSQL 17. `docker compose up -d` y http://localhost:8069
+# El radar de licitaciones se alcanza desde el contenedor en host.docker.internal (ver README).
+name: odoo-licitaciones
+
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+      POSTGRES_DB: postgres
+    volumes:
+      - datos-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  odoo:
+    image: odoo:19.0
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8069:8069"
+    environment:
+      HOST: db
+      USER: odoo
+      PASSWORD: odoo
+    volumes:
+      - ./radar_licitaciones:/mnt/extra-addons/radar_licitaciones:ro
+      - ./config/odoo.conf:/etc/odoo/odoo.conf:ro
+      - datos-odoo:/var/lib/odoo
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # Las pruebas necesitan un navegador para el recorrido de la interfaz: la imagen oficial no lo trae.
+  pruebas:
+    build:
+      context: .
+      dockerfile: Dockerfile.pruebas
+    profiles: [pruebas]
+    # Recoge los procesos que deja Chrome al cerrarse.
+    init: true
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      HOST: db
+      USER: odoo
+      PASSWORD: odoo
+    volumes:
+      - ./radar_licitaciones:/mnt/extra-addons/radar_licitaciones:ro
+      - ./config/odoo.conf:/etc/odoo/odoo.conf:ro
+      - datos-odoo:/var/lib/odoo
+
+volumes:
+  datos-db:
+  datos-odoo:

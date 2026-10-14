@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <menuitem
+    id="menu_radar_root"
+    name="Tenders"
+    web_icon="radar_licitaciones,static/description/icon.png"
+    groups="group_radar_usuario"
+    sequence="16"
+  />
+  <menuitem
+    id="menu_radar_licitaciones"
+    name="Tenders"
+    parent="menu_radar_root"
+    action="radar_licitacion_action"
+    sequence="10"
+  />
+  <menuitem
+    id="menu_radar_configuracion"
+    name="Configuration"
+    parent="menu_radar_root"
+    groups="group_radar_responsable"
+    sequence="90"
+  />
+  <menuitem
+    id="menu_radar_perfiles"
+    name="Search profiles"
+    parent="menu_radar_configuracion"
+    action="radar_perfil_action"
+    sequence="10"
+  />
+  <menuitem
+    id="menu_radar_ajustes"
+    name="Settings"
+    parent="menu_radar_configuracion"
+    action="radar_config_settings_action"
+    groups="base.group_system"
+    sequence="20"
+  />
+</odoo>

@@ -1,0 +1,30 @@
+{
+    "name": "Radar de licitaciones",
+    "summary": "Importa licitaciones públicas del radar y las convierte en oportunidades del CRM",
+    "version": "19.0.1.0.0",
+    "category": "Sales/CRM",
+    "website": "https://github.com/marnau74/odoo-licitaciones",
+    "author": "Mario Arnau",
+    "license": "LGPL-3",
+    "depends": ["crm", "mail"],
+    "external_dependencies": {"python": ["requests"]},
+    "data": [
+        "security/radar_security.xml",
+        "security/ir.model.access.csv",
+        "security/radar_rules.xml",
+        "data/ir_cron.xml",
+        "views/radar_licitacion_views.xml",
+        "views/radar_perfil_views.xml",
+        "views/crm_lead_views.xml",
+        "views/res_config_settings_views.xml",
+        "views/menus.xml",
+        "report/radar_licitacion_report.xml",
+    ],
+    "assets": {
+        "web.assets_tests": [
+            "radar_licitaciones/static/tests/tours/*.js",
+        ],
+    },
+    "application": True,
+    "installable": True,
+}
