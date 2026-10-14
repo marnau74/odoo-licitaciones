@@ -32,9 +32,9 @@
   "jerarquia": [
    "Cartagena",
    "Ayuntamientos",
-   "RegiÃ³n de Murcia",
+   "Región de Murcia",
    "ENTIDADES LOCALES",
-   "Sector PÃºblico"
+   "Sector Público"
   ]
  },
  "importeSinIva": 37190.08,
@@ -47,11 +47,11 @@
   },
   {
    "codigo": "48614000",
-   "nombre": "Sistema de recopilaciÃ³n de datos"
+   "nombre": "Sistema de recopilación de datos"
   },
   {
    "codigo": "48900000",
-   "nombre": "Paquetes de software y sistemas informÃ¡ticos diversos"
+   "nombre": "Paquetes de software y sistemas informáticos diversos"
   },
   {
    "codigo": "48960000",
@@ -108,12 +108,12 @@
   },
   {
    "tipo": "OTRO",
-   "nombre": "Acuerdo de iniciaciÃ³n del expediente",
+   "nombre": "Acuerdo de iniciación del expediente",
    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-2faaf8f3-9ccf-4882-8a00-4495a3489953"
   },
   {
    "tipo": "OTRO",
-   "nombre": "Documento de aprobaciÃ³n del expediente",
+   "nombre": "Documento de aprobación del expediente",
    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-b5ce6409-4318-492b-966e-a3afd63f825e"
   }
  ],

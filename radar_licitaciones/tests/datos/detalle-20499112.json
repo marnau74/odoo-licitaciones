@@ -1,7 +1,7 @@
 {
  "id": 20499112,
  "expediente": "V-08/26-06",
- "titulo": "Servicio de supervisiÃ³n tÃ©cnica especializada del centro de proceso de datos y red de telecomunicaciones y de la explotaciÃ³n de los equipos de control de consumos de la MCT (Va/Varios).",
+ "titulo": "Servicio de supervisión técnica especializada del centro de proceso de datos y red de telecomunicaciones y de la explotación de los equipos de control de consumos de la MCT (Va/Varios).",
  "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1wM3IBbtFBWP%2Bo96UAV7cQ%3D%3D",
  "estado": {
   "codigo": "PUB",
@@ -18,7 +18,7 @@
  },
  "organo": {
   "id": 969,
-  "nombre": "ComitÃ© Ejecutivo de la Mancomunidad de los Canales del Taibilla",
+  "nombre": "Comité Ejecutivo de la Mancomunidad de los Canales del Taibilla",
   "nif": "Q3017002A",
   "dir3": "EA0022979",
   "tipo": {
@@ -31,11 +31,11 @@
   "perfilContratante": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=APhUgYQcJXw%3D",
   "jerarquia": [
    "Mancomunidad de los Canales del Taibilla",
-   "DirecciÃ³n General del Agua",
-   "SecretarÃ­a de Estado de Medio Ambiente",
-   "Ministerio para la TransiciÃ³n EcolÃ³gica y el Reto DemogrÃ¡fico",
-   "ADMINISTRACIÃ“N GENERAL DEL ESTADO",
-   "Sector PÃºblico"
+   "Dirección General del Agua",
+   "Secretaría de Estado de Medio Ambiente",
+   "Ministerio para la Transición Ecológica y el Reto Demográfico",
+   "ADMINISTRACIÓN GENERAL DEL ESTADO",
+   "Sector Público"
   ]
  },
  "importeSinIva": 1535379.89,
@@ -44,7 +44,7 @@
  "cpv": [
   {
    "codigo": "71330000",
-   "nombre": "Servicios diversos de ingenierÃ­a"
+   "nombre": "Servicios diversos de ingeniería"
   },
   {
    "codigo": "72253000",
@@ -76,7 +76,7 @@
   },
   {
    "tipo": "OTRO",
-   "nombre": "Documento de aprobaciÃ³n del expediente",
+   "nombre": "Documento de aprobación del expediente",
    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-11b5c9d4-f484-4866-acc3-5b69c39cee31"
   },
   {
@@ -91,12 +91,12 @@
   },
   {
    "tipo": "OTRO",
-   "nombre": "Acuerdo de iniciaciÃ³n del expediente",
+   "nombre": "Acuerdo de iniciación del expediente",
    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-ed5dee5b-df51-4c03-ac99-52a452e630bd"
   },
   {
    "tipo": "OTRO",
-   "nombre": "ORDEN DE REDACCIÃ“N",
+   "nombre": "ORDEN DE REDACCIÓN",
    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-fa2a2811-8f59-4060-bdd5-22ba73cc5aef"
   }
  ],

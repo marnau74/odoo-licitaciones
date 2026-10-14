@@ -32,9 +32,9 @@
   "jerarquia": [
    "Cartagena",
    "Ayuntamientos",
-   "RegiÃ³n de Murcia",
+   "Región de Murcia",
    "ENTIDADES LOCALES",
-   "Sector PÃºblico"
+   "Sector Público"
   ]
  },
  "importeSinIva": 585000.0,
@@ -47,7 +47,7 @@
   },
   {
    "codigo": "72514300",
-   "nombre": "Servicios de gestiÃ³n de instalaciones para el mantenimiento de sistemas informÃ¡ticos"
+   "nombre": "Servicios de gestión de instalaciones para el mantenimiento de sistemas informáticos"
   },
   {
    "codigo": "48730000",
@@ -61,7 +61,7 @@
  "lugar": "Murcia",
  "plazoPresentacion": "2026-10-20T21:59:00Z",
  "fechaPublicacion": "2026-09-20",
- "duracion": "455 dÃ­as",
+ "duracion": "455 días",
  "financiacionUe": false,
  "anulada": false,
  "lotes": [],
@@ -104,12 +104,12 @@
   },
   {
    "tipo": "OTRO",
-   "nombre": "Documento de aprobaciÃ³n del expediente",
+   "nombre": "Documento de aprobación del expediente",
    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-c9202eb5-6010-4014-8237-3805c6e2e4b3"
   },
   {
    "tipo": "OTRO",
-   "nombre": "Acuerdo de iniciaciÃ³n del expediente",
+   "nombre": "Acuerdo de iniciación del expediente",
    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-7a1b5b78-0e76-4437-aed0-840a44cb6392"
   },
   {

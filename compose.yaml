@@ -1,5 +1,6 @@
 # Odoo 19 con el módulo montado y PostgreSQL 17. `docker compose up -d` y http://localhost:8069
 # El radar de licitaciones se alcanza desde el contenedor en host.docker.internal (ver README).
+# Las contraseñas son las del entorno de desarrollo local; en un servidor se cambian por variables de entorno.
 name: odoo-licitaciones
 
 services:
