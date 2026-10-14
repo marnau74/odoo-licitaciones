@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  estilo:
+    name: Estilo y reglas de la OCA
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
+      - run: pipx run pre-commit==4.7.0 run --all-files --show-diff-on-failure
+
+  pruebas:
+    name: Pruebas en Odoo 19
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Imagen de pruebas (Odoo 19 con Chrome)
+        run: docker compose build pruebas
+      - name: PostgreSQL
+        run: docker compose up -d --wait db
+      - name: Instalar el módulo y pasar las pruebas
+        run: |
+          set -o pipefail
+          docker compose run --rm pruebas odoo -d pruebas -i radar_licitaciones \
+            --test-enable --test-tags /radar_licitaciones --stop-after-init 2>&1 | tee pruebas.log
+          # Odoo no siempre termina con error si falla una prueba: se comprueba también el resumen.
+          grep -q "0 failed, 0 error(s)" pruebas.log
+          ! grep -E "^[0-9-]+ [0-9:,]+ [0-9]+ (ERROR|CRITICAL)" pruebas.log
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: failure()
+        with:
+          name: registro-de-pruebas
+          path: pruebas.log
+          retention-days: 7
