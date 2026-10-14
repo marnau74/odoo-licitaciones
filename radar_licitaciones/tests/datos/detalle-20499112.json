@@ -1,0 +1,105 @@
+{
+ "id": 20499112,
+ "expediente": "V-08/26-06",
+ "titulo": "Servicio de supervisiÃ³n tÃ©cnica especializada del centro de proceso de datos y red de telecomunicaciones y de la explotaciÃ³n de los equipos de control de consumos de la MCT (Va/Varios).",
+ "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1wM3IBbtFBWP%2Bo96UAV7cQ%3D%3D",
+ "estado": {
+  "codigo": "PUB",
+  "nombre": "Publicada"
+ },
+ "tipoContrato": {
+  "codigo": "2",
+  "nombre": "Servicios"
+ },
+ "subtipoContrato": "12",
+ "procedimiento": {
+  "codigo": "1",
+  "nombre": "Abierto"
+ },
+ "organo": {
+  "id": 969,
+  "nombre": "ComitÃ© Ejecutivo de la Mancomunidad de los Canales del Taibilla",
+  "nif": "Q3017002A",
+  "dir3": "EA0022979",
+  "tipo": {
+   "codigo": "1",
+   "nombre": "Autoridad estatal"
+  },
+  "ciudad": "Cartagena",
+  "codigoPostal": "30201",
+  "web": "http://www.mct.es",
+  "perfilContratante": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=APhUgYQcJXw%3D",
+  "jerarquia": [
+   "Mancomunidad de los Canales del Taibilla",
+   "DirecciÃ³n General del Agua",
+   "SecretarÃ­a de Estado de Medio Ambiente",
+   "Ministerio para la TransiciÃ³n EcolÃ³gica y el Reto DemogrÃ¡fico",
+   "ADMINISTRACIÃ“N GENERAL DEL ESTADO",
+   "Sector PÃºblico"
+  ]
+ },
+ "importeSinIva": 1535379.89,
+ "importeConIva": 1857809.67,
+ "valorEstimado": 3224297.77,
+ "cpv": [
+  {
+   "codigo": "71330000",
+   "nombre": "Servicios diversos de ingenierÃ­a"
+  },
+  {
+   "codigo": "72253000",
+   "nombre": "Servicios de unidad de asistencia y de apoyo"
+  }
+ ],
+ "nuts": {
+  "codigo": "ES620",
+  "nombre": "Murcia"
+ },
+ "lugar": "Murcia",
+ "plazoPresentacion": "2026-11-05T12:00:00Z",
+ "fechaPublicacion": "2026-09-30",
+ "duracion": "24 meses",
+ "financiacionUe": false,
+ "anulada": false,
+ "lotes": [],
+ "resultados": [],
+ "documentos": [
+  {
+   "tipo": "PLIEGO_ADMINISTRATIVO",
+   "nombre": "PCAP V082606.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=feL29Io3yq9pf2GXkMZaxmeDDGmk3cJ8NX7NMUrqA2NrGS8dgc3aOEKlkR1a%2BEoBqZ0Jg3S6FWHL%2BnRXuOIboYUQqP0Ln4myrNNvSCv1uB5JOVDbGCDM%2BMigrvuVS7Rv"
+  },
+  {
+   "tipo": "PLIEGO_TECNICO",
+   "nombre": "PPTP V082606.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=mHwP9Zju4q%2BO1W2XL9GVq2SHUMSJt1iNKgg4wPrYXLqgHJOJB2LNt6MbIpsHJtyPEb7I9CeaV3JWP4BzyV/3zFmx/U/miGIPsbmy1QFdmq4C1/zDIE0Kw/PWNnLS0Z0z"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Documento de aprobaciÃ³n del expediente",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-11b5c9d4-f484-4866-acc3-5b69c39cee31"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Memoria justificativa",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-5badb2c9-6f96-4fda-831e-d336607795ff"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Informe de insuficiencia de medios",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-3b91f59e-2cd1-40a2-ac5b-8ea3057fc511"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Acuerdo de iniciaciÃ³n del expediente",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-ed5dee5b-df51-4c03-ac99-52a452e630bd"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "ORDEN DE REDACCIÃ“N",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-fa2a2811-8f59-4060-bdd5-22ba73cc5aef"
+  }
+ ],
+ "actualizadaEn": "2026-09-30T09:09:08.738Z",
+ "vistaPorPrimeraVez": "2026-10-14T00:20:53.631374Z"
+}

@@ -1,0 +1,122 @@
+{
+ "id": 20571268,
+ "expediente": "SE2026/43",
+ "titulo": "Servicio para la publicacion de datos del Proyecto Europeo Sense: Digital 2023 Nube IA 04, para el Ayuntamiento de Cartgena.",
+ "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=gkrJ3AqSYBF70UvEyYJSGw%3D%3D",
+ "estado": {
+  "codigo": "PUB",
+  "nombre": "Publicada"
+ },
+ "tipoContrato": {
+  "codigo": "2",
+  "nombre": "Servicios"
+ },
+ "subtipoContrato": "1",
+ "procedimiento": {
+  "codigo": "9",
+  "nombre": "Abierto simplificado"
+ },
+ "organo": {
+  "id": 850,
+  "nombre": "Junta de Gobierno Local del Ayuntamiento de Cartagena",
+  "nif": "P3001600J",
+  "dir3": "L01300161",
+  "tipo": {
+   "codigo": "3",
+   "nombre": "Autoridad local"
+  },
+  "ciudad": "Cartagena",
+  "codigoPostal": "30201",
+  "web": "https://www.cartagena.es",
+  "perfilContratante": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=nEU8%2BrO6PkrnSoTX3z%2F7wA%3D%3D",
+  "jerarquia": [
+   "Cartagena",
+   "Ayuntamientos",
+   "RegiÃ³n de Murcia",
+   "ENTIDADES LOCALES",
+   "Sector PÃºblico"
+  ]
+ },
+ "importeSinIva": 37190.08,
+ "importeConIva": 45000.0,
+ "valorEstimado": 37190.08,
+ "cpv": [
+  {
+   "codigo": "72212600",
+   "nombre": "Servicios de desarrollo de software de bases de datos y de funcionamiento"
+  },
+  {
+   "codigo": "48614000",
+   "nombre": "Sistema de recopilaciÃ³n de datos"
+  },
+  {
+   "codigo": "48900000",
+   "nombre": "Paquetes de software y sistemas informÃ¡ticos diversos"
+  },
+  {
+   "codigo": "48960000",
+   "nombre": "Paquetes de software de controladores y sistemas"
+  }
+ ],
+ "nuts": {
+  "codigo": "ES620",
+  "nombre": "Murcia"
+ },
+ "lugar": "Murcia",
+ "plazoPresentacion": "2026-10-15T21:59:00Z",
+ "fechaPublicacion": "2026-09-28",
+ "duracion": "3 meses",
+ "financiacionUe": true,
+ "anulada": false,
+ "lotes": [],
+ "resultados": [],
+ "documentos": [
+  {
+   "tipo": "PLIEGO_ADMINISTRATIVO",
+   "nombre": "PLIEGO ADMINISTRATIVO PAS .pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=kgo3g92SjNeBUA0nFIUIQgPAq1UcLt3dAnmRFuH2hjOeIdvddYTuNra1LXFPhatNB62Ph1BAUL4JJrf36sfsa1yFLt/mMavNCHWnBVoMIYffdyQgZAdTm3EfcUAC7CJ6"
+  },
+  {
+   "tipo": "PLIEGO_TECNICO",
+   "nombre": "PLIEGO LICITACION SENSE.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Chi5kps6td6sB5bOoDPnnSaZnMnI67G%2BjKxiKpic%2B0pjzKwRb/Sbnlw8M9kQ31RNkeDD5KI/IyBrNQt/%2BT%2BT093B6z0nvipg649Kdpgvors//q7NB2iMZvNyf0xrJmjt"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "ANEXO II DECLARACION RESPONSABLE.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=9WvdLjcDwyDSTC4%2B/%2BAXau1qk2BcCSIjVZPKy%2BY8080WwGq1hh0N6WGDweO4APnkb1X3A6MJjSotXvYzM5g5Z%2BxGNOKcEiMDEEQTySCSAeV7QB3HKyQaFUExmUVQCerk"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "ANEXO I OFERTA.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=W2qz9lnh5euS08MEejPDiOYhgmi5JDyR7EZjSZrunQ5k2yvlUA8WM3em6Kp6Qk6kptz2m1jJwHB3dcqymCKhM/drrd%2B4u86xXEK0J6eZNRJt/o8fNevwsujgRzaBbugn"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "INFORME INSUFICIENCIA MEDIOS PROPIOS",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-da051c05-848a-404e-923a-057bf2efd7fd"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "INFORME DE NECESIDAD",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-57f94526-7dca-483a-b1b0-a45c78f39567"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "INFORME NO DIVISION LOTES",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-3c13998e-ef1a-44c9-a558-49f2a99f3f28"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Acuerdo de iniciaciÃ³n del expediente",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-2faaf8f3-9ccf-4882-8a00-4495a3489953"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Documento de aprobaciÃ³n del expediente",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-b5ce6409-4318-492b-966e-a3afd63f825e"
+  }
+ ],
+ "actualizadaEn": "2026-09-28T09:54:01.86Z",
+ "vistaPorPrimeraVez": "2026-10-14T00:21:12.120149Z"
+}

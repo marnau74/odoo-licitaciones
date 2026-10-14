@@ -1,0 +1,123 @@
+{
+ "id": 20480431,
+ "expediente": "SE2026/44",
+ "titulo": "Servicio de SOC/MDR y Herramientas de Ciberseguridad para el Ayuntamiento de Cartagena.",
+ "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=CeV3JsRvMYNeKgd8LfVV9g%3D%3D",
+ "estado": {
+  "codigo": "PUB",
+  "nombre": "Publicada"
+ },
+ "tipoContrato": {
+  "codigo": "2",
+  "nombre": "Servicios"
+ },
+ "subtipoContrato": "7",
+ "procedimiento": {
+  "codigo": "1",
+  "nombre": "Abierto"
+ },
+ "organo": {
+  "id": 850,
+  "nombre": "Junta de Gobierno Local del Ayuntamiento de Cartagena",
+  "nif": "P3001600J",
+  "dir3": "L01300161",
+  "tipo": {
+   "codigo": "3",
+   "nombre": "Autoridad local"
+  },
+  "ciudad": "Cartagena",
+  "codigoPostal": "30201",
+  "web": "https://www.cartagena.es",
+  "perfilContratante": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=nEU8%2BrO6PkrnSoTX3z%2F7wA%3D%3D",
+  "jerarquia": [
+   "Cartagena",
+   "Ayuntamientos",
+   "RegiÃ³n de Murcia",
+   "ENTIDADES LOCALES",
+   "Sector PÃºblico"
+  ]
+ },
+ "importeSinIva": 585000.0,
+ "importeConIva": 707850.0,
+ "valorEstimado": 585000.0,
+ "cpv": [
+  {
+   "codigo": "72250000",
+   "nombre": "Servicios de sistemas y apoyo"
+  },
+  {
+   "codigo": "72514300",
+   "nombre": "Servicios de gestiÃ³n de instalaciones para el mantenimiento de sistemas informÃ¡ticos"
+  },
+  {
+   "codigo": "48730000",
+   "nombre": "Paquetes de software de seguridad"
+  }
+ ],
+ "nuts": {
+  "codigo": "ES620",
+  "nombre": "Murcia"
+ },
+ "lugar": "Murcia",
+ "plazoPresentacion": "2026-10-20T21:59:00Z",
+ "fechaPublicacion": "2026-09-20",
+ "duracion": "455 dÃ­as",
+ "financiacionUe": false,
+ "anulada": false,
+ "lotes": [],
+ "resultados": [],
+ "documentos": [
+  {
+   "tipo": "PLIEGO_ADMINISTRATIVO",
+   "nombre": "PLIEGO ADMINISTRATIVO ABIERTO .pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=3RvTg%2BqJGplpqK%2BNayOJdmu3brxMJj85yHdub21Tk8IRUVsFr1wAigfAsquMfDh9lBaZNGbs4SxQbAtLZnFB2c83c%2Bb8gBCF4jisIX8LfHOHAj0WEJrB5sP7amrh2jBD"
+  },
+  {
+   "tipo": "PLIEGO_TECNICO",
+   "nombre": "PPT SERVICIO SOC Y HERRAMIENTA CIBERSEGURIDAD.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=4LNw9X8Oth%2BSn9NbTkZ4FS6sIE23mzU7WXFZ56WAvbF1G%2BlP4OQLs1MxqFW16iI7xeK%2BjNty6lM6gGPDyy6wJX7drdkgQxKh8ayOdg%2BOlwGHAj0WEJrB5sP7amrh2jBD"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "ANEXO II DECLARACION RESPONSABLE.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=nEKExop703lVKSp8fdkyZUjOF4fmqyPUbseIRUqFbOwy9E4FjxESeudo/Ue2XaSHKk6HVHR4BnlYQi7mPNKB4oZY%2BzXDj6hJTFzV9ZvUGNEC1/zDIE0Kw/PWNnLS0Z0z"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "ANEXO_I_OFERTA.pdf",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=epmjHNbOcurYF7aB/lF6sh%2BgUfSBbpzDI2Sho3I3ATJWgU/b%2BGfGZDqI7yjtoyCPD6vuZCaGIpVosieZvqmKCdNj1ms3XGPechpGsZ2REhCB0nvVKRzfe4rpHcnlPhSZ"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "DEUC SE2026 44.xml",
+   "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=NBgtra1Y4crwh5zPrIsm/9lGI2Y0AXLlYgjKLUZ1MJWSC4WI/zkr9V5CJuODz7tIRc3RESq3nSdrWkq/XOd2FtaaeSnsAe9iO68HEAzFUR5t/o8fNevwsujgRzaBbugn"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "INFORME DE NECESIDAD",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-561d40ed-3573-41e3-8116-53a91e877725"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "INFORME NO DIVISION LOTES",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-3663d434-a96c-4ff9-a150-0d1864ffe2c8"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Documento de aprobaciÃ³n del expediente",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-c9202eb5-6010-4014-8237-3805c6e2e4b3"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "Acuerdo de iniciaciÃ³n del expediente",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-7a1b5b78-0e76-4437-aed0-840a44cb6392"
+  },
+  {
+   "tipo": "OTRO",
+   "nombre": "INFORME INSUFICIENCIA MEDIOS PROPIOS",
+   "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-ee851c5e-d921-49e8-8f60-af6e4cdacb25"
+  }
+ ],
+ "actualizadaEn": "2026-09-21T08:19:41.736Z",
+ "vistaPorPrimeraVez": "2026-10-14T00:20:41.060165Z"
+}

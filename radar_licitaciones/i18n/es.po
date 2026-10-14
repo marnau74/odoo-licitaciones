@@ -1,0 +1,1027 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260926\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-14 07:21+0000\n"
+"PO-Revision-Date: 2026-10-14 07:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_perfil.py:0
+msgid "%(count)s new tenders imported from the radar."
+msgstr "%(count)s licitaciones nuevas importadas del radar."
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_perfil.py:0
+msgid "%(new)s new and %(updated)s updated tenders."
+msgstr "%(new)s licitaciones nuevas y %(updated)s actualizadas."
+
+#. module: radar_licitaciones
+#: model:ir.actions.report,print_report_name:radar_licitaciones.action_report_licitacion
+msgid "'Tender - %s' % (object.expediente or object.radar_id)"
+msgstr "'Licitación - %s' % (object.expediente or object.radar_id)"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "(cancelled)"
+msgstr "(anulada)"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "(untitled)"
+msgstr "(sin título)"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_form
+msgid "<span class=\"o_stat_text\">Opportunity</span>"
+msgstr "<span class=\"o_stat_text\">Oportunidad</span>"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.crm_lead_view_form
+msgid "<span class=\"o_stat_text\">Public tender</span>"
+msgstr "<span class=\"o_stat_text\">Licitación</span>"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+msgid "<strong>The last import failed.</strong>"
+msgstr "<strong>La última importación ha fallado.</strong>"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_needaction
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_needaction
+msgid "Action Needed"
+msgstr "Acción requerida"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de Actividad de Excepción"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de tipo de actividad"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_res_config_settings__radar_licitaciones_url
+msgid ""
+"Address of the tender radar, for example https://radar.example.com. Its "
+"public API is used."
+msgstr ""
+"Dirección del radar de licitaciones, por ejemplo https://radar.example.com. "
+"Se usa su API pública."
+
+#. module: radar_licitaciones
+#: model:res.groups,name:radar_licitaciones.group_radar_responsable
+msgid "Administrator"
+msgstr "Responsable"
+
+#. module: radar_licitaciones
+#: model:ir.model.constraint,message:radar_licitaciones.constraint_radar_perfil_importes_positivos
+msgid "Amounts cannot be negative."
+msgstr "Los importes no pueden ser negativos."
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_attachment_count
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_attachment_count
+msgid "Attachment Count"
+msgstr "Número de archivos adjuntos"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__estado__adj
+msgid "Awarded"
+msgstr "Adjudicada"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__plazo
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Bid deadline"
+msgstr "Fin del plazo"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__importe
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Budget (without VAT)"
+msgstr "Presupuesto (sin IVA)"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__importe_minimo
+msgid "Budget without VAT."
+msgstr "Presupuesto sin IVA."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__importe_maximo
+msgid "Budget without VAT. Zero: no limit."
+msgstr "Presupuesto sin IVA. Cero: sin límite."
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "CPV"
+msgstr ""
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__cpv
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__cpv
+msgid "CPV codes"
+msgstr "Códigos CPV"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_perfil.py:0
+msgid "CPV codes must have between 2 and 8 digits: %(codes)s"
+msgstr "Los códigos CPV tienen de 2 a 8 cifras: %(codes)s"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__cpv_division
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "CPV division"
+msgstr "División CPV"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "CPV: %s"
+msgstr ""
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__anulada
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__estado__anul
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_form
+msgid "Cancelled"
+msgstr "Anulada"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__cierra_pronto
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_kanban
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Closing soon"
+msgstr "Cierra pronto"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__cpv
+msgid ""
+"Comma-separated CPV codes or prefixes (2 to 8 digits). 72 covers all IT "
+"services."
+msgstr ""
+"Códigos CPV o prefijos separados por comas (de 2 a 8 cifras). 72 abarca "
+"todos los servicios informáticos."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__company_id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: radar_licitaciones
+#: model:ir.model,name:radar_licitaciones.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: radar_licitaciones
+#: model:ir.ui.menu,name:radar_licitaciones.menu_radar_configuracion
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: radar_licitaciones
+#: model:ir.model,name:radar_licitaciones.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__tipo_contrato
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Contract type"
+msgstr "Tipo de contrato"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__organo_id
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Contracting body"
+msgstr "Órgano de contratación"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "Contracting body %s"
+msgstr "Órgano de contratación %s"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_form
+msgid "Convert to opportunity"
+msgstr "Convertir en oportunidad"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "Converted into the opportunity %s."
+msgstr "Convertida en la oportunidad %s."
+
+#. module: radar_licitaciones
+#: model_terms:ir.actions.act_window,help:radar_licitaciones.radar_licitacion_action
+msgid ""
+"Create a search profile and import: the tenders from the radar that match it will appear here, ready\n"
+"                to be converted into opportunities."
+msgstr ""
+"Crea un perfil de búsqueda e importa: aquí aparecerán las licitaciones del radar que encajan, listas para\n"
+"                convertirlas en oportunidades."
+
+#. module: radar_licitaciones
+#: model_terms:ir.actions.act_window,help:radar_licitaciones.radar_perfil_action
+msgid "Create your first search profile"
+msgstr "Crea tu primer perfil de búsqueda"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__create_uid
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__create_date
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__currency_id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__dias_primera_importacion
+msgid "Days back on the first import"
+msgstr "Días hacia atrás en la primera importación"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__dias_para_el_plazo
+msgid "Days left"
+msgstr "Días que quedan"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Deadline"
+msgstr "Plazo"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_form
+msgid "Discard"
+msgstr "Descartar"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__etapa__descartada
+msgid "Discarded"
+msgstr "Descartada"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_cliente__display_name
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__display_name
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__display_name
+#: model:ir.model.fields,field_description:radar_licitaciones.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:radar_licitaciones.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__expediente
+msgid "File number"
+msgstr "Expediente"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "File number: %s"
+msgstr "Expediente: %s"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__cpv_division
+msgid "First two digits of the main CPV."
+msgstr "Las dos primeras cifras del CPV principal."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_follower_ids
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_partner_ids
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Contactos)"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icono de Font Awesome p. ej. fa-tasks"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Found by"
+msgstr "Encontrada por"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.crm_lead_view_search
+msgid "From public tenders"
+msgstr "De licitaciones"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Full file, documents and results in the radar:"
+msgstr "Ficha completa, pliegos y resultados en el radar:"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__user_id
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__user_id
+msgid ""
+"Gets the opportunities and activities of the tenders found by this profile."
+msgstr ""
+"Recibe las oportunidades y las actividades de las licitaciones que encuentra"
+" este perfil."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__has_message
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__has_message
+msgid "Has Message"
+msgstr "Tiene un mensaje"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__dias_primera_importacion
+msgid "How far back the first import looks."
+msgstr "Hasta cuándo mira hacia atrás la primera importación."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_crm_lead__id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_cliente__id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_res_config_settings__id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_res_partner__radar_organo_id
+#: model:ir.model.fields,help:radar_licitaciones.field_res_users__radar_organo_id
+msgid "Identifier of the contracting body in the tender radar."
+msgstr "Identificador del órgano de contratación en el radar."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__message_needaction
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcada, hay nuevos mensajes que requieren su atención."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__message_has_error
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__message_has_sms_error
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__message_has_error
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tienen error de envío."
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+msgid "Import"
+msgstr "Importación"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_search
+msgid "Import failed"
+msgstr "Importación fallida"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+msgid "Import now"
+msgstr "Importar ahora"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__etapa__interesa
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_form
+msgid "Interesting"
+msgstr "Interesa"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_is_follower
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_is_follower
+msgid "Is Follower"
+msgstr "Es un seguidor"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__palabras
+msgid "Keywords"
+msgstr "Palabras"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__write_uid
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__write_date
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__ultimo_error
+msgid "Last error"
+msgstr "Último error"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__ultima_importacion
+msgid "Last import"
+msgstr "Última importación"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__plazo
+msgid "Last moment to submit a bid."
+msgstr "Último momento para presentar la oferta."
+
+#. module: radar_licitaciones
+#: model:ir.model,name:radar_licitaciones.model_crm_lead
+msgid "Lead"
+msgstr "Oportunidad"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__importe_maximo
+msgid "Maximum amount"
+msgstr "Importe máximo"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_has_error
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de envío de mensaje"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_ids
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__importe_minimo
+msgid "Minimum amount"
+msgstr "Importe mínimo"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Fecha límite de mi actividad"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "My profiles"
+msgstr "Mis perfiles"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__nuts
+msgid "NUTS region"
+msgstr "Región NUTS"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__etapa__nueva
+msgid "New"
+msgstr "Nueva"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Siguiente evento en el calendario de actividades."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha límite de la siguiente actividad"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo de la siguiente actividad"
+
+#. module: radar_licitaciones
+#: model_terms:ir.actions.act_window,help:radar_licitaciones.radar_licitacion_action
+msgid "No tenders yet"
+msgstr "Todavía no hay licitaciones"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Not published"
+msgstr "Sin publicar"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_needaction_counter
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_has_error_counter
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__message_needaction_counter
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__message_has_error_counter
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__solo_abiertas
+msgid "Only open for bids"
+msgstr "Solo con plazo abierto"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Open for bids"
+msgstr "Con plazo abierto"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_form
+msgid "Open in the radar"
+msgstr "Abrir en el radar"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Opportunities"
+msgstr "Oportunidades"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__lead_id
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__etapa__convertida
+msgid "Opportunity"
+msgstr "Oportunidad"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__estado__ev
+msgid "Pending award"
+msgstr "Pendiente de adjudicación"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__lugar
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Place"
+msgstr "Lugar"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "Place: %s"
+msgstr "Lugar: %s"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "Prepare the bid"
+msgstr "Preparar la oferta"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__estado__pre
+msgid "Prior notice"
+msgstr "Anuncio previo"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__8
+msgid "Private"
+msgstr "Privado"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__perfil_id
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Profile"
+msgstr "Perfil"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__50
+msgid "Property"
+msgstr "Patrimonial"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__state_id
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Province"
+msgstr "Provincia"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__state_ids
+msgid "Provinces"
+msgstr "Provincias"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__21
+msgid "Public service management"
+msgstr "Gestión de servicios públicos"
+
+#. module: radar_licitaciones
+#: model:ir.model,name:radar_licitaciones.model_radar_licitacion
+#: model:ir.model.fields,field_description:radar_licitaciones.field_crm_lead__licitacion_id
+msgid "Public tender"
+msgstr "Licitación"
+
+#. module: radar_licitaciones
+#: model:ir.actions.act_window,name:radar_licitaciones.radar_licitacion_action
+#: model:res.groups.privilege,name:radar_licitaciones.res_groups_privilege_radar
+msgid "Public tenders"
+msgstr "Licitaciones"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__31
+msgid "Public works concession"
+msgstr "Concesión de obras públicas"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__40
+msgid "Public-private partnership"
+msgstr "Colaboración público-privada"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Publication month"
+msgstr "Mes de publicación"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__estado__pub
+msgid "Published"
+msgstr "Publicada"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__fecha_publicacion
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Published on"
+msgstr "Publicada el"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__radar_id
+msgid "Radar ID"
+msgstr "Número en el radar"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.res_config_settings_view_form
+msgid "Radar address"
+msgstr "Dirección del radar"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_res_partner__radar_organo_id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_res_users__radar_organo_id
+msgid "Radar contracting body"
+msgstr "Órgano en el radar"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__url
+msgid "Radar link"
+msgstr "Enlace al radar"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__estado__res
+msgid "Resolved"
+msgstr "Resuelta"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__message_has_sms_error
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de envío del SMS"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__user_id
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__user_id
+msgid "Salesperson"
+msgstr "Comercial"
+
+#. module: radar_licitaciones
+#: model_terms:ir.actions.act_window,help:radar_licitaciones.radar_perfil_action
+msgid ""
+"Say which CPV codes, provinces and amounts interest the company. Every day "
+"the matching tenders are imported."
+msgstr ""
+"Indica qué CPV, provincias e importes interesan a la empresa. Cada día se "
+"importan las licitaciones que encajan."
+
+#. module: radar_licitaciones
+#: model:ir.actions.act_window,name:radar_licitaciones.radar_perfil_action
+#: model:ir.ui.menu,name:radar_licitaciones.menu_radar_perfiles
+msgid "Search profiles"
+msgstr "Perfiles de búsqueda"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "See it in the radar"
+msgstr "Verla en el radar"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__2
+msgid "Services"
+msgstr "Servicios"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__22
+msgid "Services concession"
+msgstr "Concesión de servicios"
+
+#. module: radar_licitaciones
+#: model:ir.actions.act_window,name:radar_licitaciones.radar_config_settings_action
+#: model:ir.ui.menu,name:radar_licitaciones.menu_radar_ajustes
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "Some of these tenders are already opportunities."
+msgstr "Alguna de estas licitaciones ya es una oportunidad."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__7
+msgid "Special administrative"
+msgstr "Administrativo especial"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__etapa
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Stage in the company"
+msgstr "Etapa en la empresa"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__estado
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "Status"
+msgstr "Estado"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Vencida: la fecha límite ya ha pasado\n"
+"Hoy: la fecha límite es hoy\n"
+"Planificada: actividades futuras."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__1
+msgid "Supplies"
+msgstr "Suministros"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__licitacion_count
+msgid "Tender count"
+msgstr "Número de licitaciones"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.res_config_settings_view_form
+msgid "Tender radar"
+msgstr "Radar de licitaciones"
+
+#. module: radar_licitaciones
+#: model:ir.model,name:radar_licitaciones.model_radar_cliente
+msgid "Tender radar API client"
+msgstr "Cliente de la API del radar de licitaciones"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_res_config_settings__radar_licitaciones_url
+msgid "Tender radar URL"
+msgstr "Dirección del radar de licitaciones"
+
+#. module: radar_licitaciones
+#: model:ir.actions.server,name:radar_licitaciones.ir_cron_radar_importar_ir_actions_server
+msgid "Tender radar: import tenders"
+msgstr "Radar de licitaciones: importar licitaciones"
+
+#. module: radar_licitaciones
+#: model:ir.model,name:radar_licitaciones.model_radar_perfil
+msgid "Tender search profile"
+msgstr "Perfil de búsqueda de licitaciones"
+
+#. module: radar_licitaciones
+#: model:ir.actions.report,name:radar_licitaciones.action_report_licitacion
+msgid "Tender summary"
+msgstr "Resumen de la licitación"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__licitacion_ids
+#: model:ir.ui.menu,name:radar_licitaciones.menu_radar_licitaciones
+#: model:ir.ui.menu,name:radar_licitaciones.menu_radar_root
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.res_config_settings_view_form
+msgid "Tenders"
+msgstr "Licitaciones"
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "The deadline to submit the bid is %s."
+msgstr "El plazo para presentar la oferta acaba el %s."
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_perfil.py:0
+msgid "The minimum amount cannot be greater than the maximum amount."
+msgstr "El importe mínimo no puede pasar del máximo."
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.res_config_settings_view_form
+msgid ""
+"The public API of the radar is used to import tenders and to complete the "
+"contracting bodies."
+msgstr ""
+"Se usa la API pública del radar para importar las licitaciones y completar "
+"los órganos de contratación."
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_cliente.py:0
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "The tender radar URL is not configured (Settings → Tender radar)."
+msgstr ""
+"Falta la dirección del radar de licitaciones (Ajustes → Licitaciones)."
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_cliente.py:0
+msgid "The tender radar is not responding (%(reason)s)."
+msgstr "El radar de licitaciones no responde (%(reason)s)."
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_cliente.py:0
+msgid "The tender radar rejected the request (%(status)s): %(url)s"
+msgstr ""
+"El radar de licitaciones ha rechazado la petición (%(status)s): %(url)s"
+
+#. module: radar_licitaciones
+#: model:ir.model.constraint,message:radar_licitaciones.constraint_radar_licitacion_radar_id_por_compania
+msgid "This tender has already been imported for this company."
+msgstr "Esta licitación ya está importada en esta compañía."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__name
+msgid "Title"
+msgstr "Título"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_search
+msgid "To review"
+msgstr "Por revisar"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_licitacion_view_list
+msgid "Total"
+msgstr ""
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de actividad de excepción en el registro."
+
+#. module: radar_licitaciones
+#. odoo-python
+#: code:addons/radar_licitaciones/models/radar_licitacion.py:0
+msgid "Unsupported search on “Closing soon”."
+msgstr "Búsqueda no admitida en «Cierra pronto»."
+
+#. module: radar_licitaciones
+#: model:res.groups,name:radar_licitaciones.group_radar_usuario
+msgid "User"
+msgstr "Usuario"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_licitacion__website_message_ids
+#: model:ir.model.fields,field_description:radar_licitaciones.field_radar_perfil__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_licitacion__website_message_ids
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación del sitio web"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+msgid "What"
+msgstr "Qué"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+msgid "Where and who"
+msgstr "Dónde y quién"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__state_ids
+msgid "Where the contract is carried out. Empty: all of Spain."
+msgstr "Dónde se ejecuta el contrato. Vacío: toda España."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields,help:radar_licitaciones.field_radar_perfil__palabras
+msgid "Words to look for in the title. Accepts \"exact phrases\" and -exclusions."
+msgstr ""
+"Palabras que buscar en el título. Admite \"frases exactas\" y -exclusiones."
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__3
+msgid "Works"
+msgstr "Obras"
+
+#. module: radar_licitaciones
+#: model:ir.model.fields.selection,name:radar_licitaciones.selection__radar_licitacion__tipo_contrato__32
+msgid "Works concession"
+msgstr "Concesión de obras"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+msgid "e.g. IT services in Murcia"
+msgstr "p. ej., Servicios informáticos en Murcia"
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.radar_perfil_view_form
+msgid "e.g. software -\"cleaning\""
+msgstr "p. ej., software -\"limpieza\""
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.res_config_settings_view_form
+msgid "https://radar.example.com"
+msgstr ""
+
+#. module: radar_licitaciones
+#: model_terms:ir.ui.view,arch_db:radar_licitaciones.report_licitacion_documento
+msgid "· File"
+msgstr "· Expediente"
