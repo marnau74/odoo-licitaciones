@@ -42,7 +42,7 @@ jobs:
           # Odoo no siempre termina con error si falla una prueba: se comprueba también el resumen.
           grep -q "0 failed, 0 error(s)" pruebas.log
           ! grep -E "^[0-9-]+ [0-9:,]+ [0-9]+ (ERROR|CRITICAL)" pruebas.log
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: failure()
         with:
           name: registro-de-pruebas
