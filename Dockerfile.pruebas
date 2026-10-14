@@ -1,5 +1,5 @@
 # Odoo 19 con Chrome, para las pruebas de la interfaz (HttpCase con recorridos).
-FROM odoo:19.0
+FROM odoo:20.0
 USER root
 RUN apt-get update \
     && apt-get install -y --no-install-recommends wget ca-certificates python3-websocket \
